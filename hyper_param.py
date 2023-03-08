@@ -1,5 +1,5 @@
 ip_file_dir = "./data/"
-CLASS_NUM = category_num = 350
+CLASS_NUM = category_num = 50
 max_len = 110
 BATCH_SIZE = 128
 LEARNING_RATE = 0.001
@@ -15,4 +15,4 @@ def get_train_length():
 
 N = get_train_length()
 SUBSET_SIZE = 0.1
-WORKERS = 4
+WORKERS = 1
