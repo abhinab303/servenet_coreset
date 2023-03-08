@@ -138,7 +138,7 @@ if __name__ == "__main__":
     # model.weight_sum.w1 = torch.nn.Parameter(torch.tensor([0.5]))
     # model.weight_sum.w2 = torch.nn.Parameter(torch.tensor([0.5]))
 
-    model.bert_description.requires_grad_(False)
+    # model.bert_description.requires_grad_(False)
     model = torch.nn.DataParallel(model)
     model = model.cuda()
     model.train()
@@ -251,9 +251,9 @@ if __name__ == "__main__":
             }
         )
 
-        acc_list.to_csv('/home/aa7514/PycharmProjects/servenet_coreset/files/t1_SN_50.csv')
-        np.savez("/home/aa7514/PycharmProjects/servenet_coreset/files/subset_10b_50c", subset=selected_ndx,
-                 weight=selected_wgt)
+        acc_list.to_csv(f'/home/aa7514/PycharmProjects/servenet_coreset/files/t1_SN_{CLASS_NUM}.csv')
+        np.savez(f"/home/aa7514/PycharmProjects/servenet_coreset/files/subset_{int(SUBSET_SIZE*100)}b_{CLASS_NUM}c",
+                 subset=selected_ndx, weight=selected_wgt)
 
     # print("=======>top1 acc on the test:{}".format(str(eval_top1_sn(model, test_dataloader, CLASS_NUM, True))))
 

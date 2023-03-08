@@ -101,7 +101,7 @@ def load_data_test():
     return test_data
 
 
-def eval_top1(model, dataLoader, class_num=50, per_class=False):
+def eval_top1(model, dataLoader, class_num=CLASS_NUM, per_class=False):
     model.eval()
     correct = 0
     total = 0

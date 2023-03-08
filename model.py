@@ -2,12 +2,13 @@
 import torch
 from transformers import BertModel
 import torch.nn as nn
+from hyper_param import *
 
 class MultiHead(nn.Module):
     def __init__(self,
                  feat_dim=1024,
                  #  num_classes=250,
-                 num_classes=50,
+                 num_classes=CLASS_NUM,
                  use_effect=True,
                  num_head=2,  # 2, 4
                  tau=16.0,  # 16, 32

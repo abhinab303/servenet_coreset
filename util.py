@@ -495,8 +495,8 @@ def get_orders_and_weights(B, X, metric, smtk, no=0, stoch_greedy=0, y=None, wei
         # merging imbalanced classes
         class_ratios = np.divide([np.sum(y == i) for i in classes], N)
         props = np.rint(class_ratios / np.min(class_ratios))
-        print(f'Selecting with ratios {np.array(class_ratios)}')
-        print(f'Class proportions {np.array(props)}')
+        # print(f'Selecting with ratios {np.array(class_ratios)}')
+        # print(f'Class proportions {np.array(props)}')
 
     order_mg_all = np.array(order_mg_all)
     cluster_sizes_all = np.array(cluster_sizes_all)
