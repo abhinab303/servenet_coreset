@@ -138,7 +138,8 @@ if __name__ == "__main__":
     # model.weight_sum.w1 = torch.nn.Parameter(torch.tensor([0.5]))
     # model.weight_sum.w2 = torch.nn.Parameter(torch.tensor([0.5]))
 
-    # model.bert_description.requires_grad_(False)
+    model.bert_description.requires_grad_(False)
+    model.bert_name.requires_grad_(False)
     model = torch.nn.DataParallel(model)
     model = model.cuda()
     model.train()
@@ -204,7 +205,7 @@ if __name__ == "__main__":
 
         # pdb.set_trace()
 
-        for data, idx in tqdm(train_loader):
+        for i, (data, idx) in enumerate(train_loader):
             # zero the parameter gradients
             optimizer.zero_grad()
 
@@ -234,7 +235,7 @@ if __name__ == "__main__":
 
         if top_1_acc > best_accuracy:
             best_accuracy = top_1_acc
-            torch.save(model, "/home/aa7514/PycharmProjects/servenet_coreset/files/snlt_best2_200")
+            torch.save(model, "./files/snlt_best2_200")
 
         print("=======>top1 acc on the test:{}".format(str(top_1_acc)))
         print("=======>top5 acc on the test:{}".format(str(top_5_acc)))
@@ -251,8 +252,8 @@ if __name__ == "__main__":
             }
         )
 
-        acc_list.to_csv(f'/home/aa7514/PycharmProjects/servenet_coreset/files/t1_SN_{CLASS_NUM}.csv')
-        np.savez(f"/home/aa7514/PycharmProjects/servenet_coreset/files/subset_{int(SUBSET_SIZE*100)}b_{CLASS_NUM}c",
+        acc_list.to_csv(f'./files/t1_SN_{CLASS_NUM}.csv')
+        np.savez(f"./files/subset_{int(SUBSET_SIZE*100)}b_{CLASS_NUM}c",
                  subset=selected_ndx, weight=selected_wgt)
 
     # print("=======>top1 acc on the test:{}".format(str(eval_top1_sn(model, test_dataloader, CLASS_NUM, True))))
