@@ -210,8 +210,8 @@ if __name__ == "__main__":
 
         # pdb.set_trace()
 
-        # for i, (data, idx) in enumerate(train_loader):
-        for data, idx in tqdm(train_loader):
+        for i, (data, idx) in enumerate(train_loader):
+        # for data, idx in tqdm(train_loader):
             # zero the parameter gradients
             optimizer.zero_grad()
 
@@ -241,7 +241,7 @@ if __name__ == "__main__":
 
         if top_1_acc > best_accuracy:
             best_accuracy = top_1_acc
-            torch.save(model, f"./files/snlt3_best3_{CLASS_NUM}_full")
+            torch.save(model, f"./files/snlt3_best3_{CLASS_NUM}_{int(SUBSET_SIZE*100)}b_full")
 
         print("=======>top1 acc on the test:{}".format(str(top_1_acc)))
         print("=======>top5 acc on the test:{}".format(str(top_5_acc)))
@@ -258,7 +258,7 @@ if __name__ == "__main__":
             }
         )
 
-        acc_list.to_csv(f'./files/t3_SN_{CLASS_NUM}_full.csv')
+        acc_list.to_csv(f'./files/t3_SN_{CLASS_NUM}_{int(SUBSET_SIZE*100)}b_full.csv')
 
         if SUBSET_SIZE < 1:
             np.savez(f"./files/subset3_{int(SUBSET_SIZE*100)}b_{CLASS_NUM}c_full",
