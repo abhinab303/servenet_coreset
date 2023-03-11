@@ -7,7 +7,7 @@
 #SBATCH -n 1
 #SBATCH -c 1
 #SBATCH --mem=8g
-#SBATCH --gres=gpu:p4:1
+#SBATCH --gres=gpu:v100:1
 
 conda activate sn_coreset
 
