@@ -135,11 +135,11 @@ if __name__ == "__main__":
 
     model = ServeNet(768, CLASS_NUM)
 
-    # model.weight_sum.w1 = torch.nn.Parameter(torch.tensor([0.5]))
-    # model.weight_sum.w2 = torch.nn.Parameter(torch.tensor([0.5]))
+    model.weight_sum.w1 = torch.nn.Parameter(torch.tensor([0.5]))
+    model.weight_sum.w2 = torch.nn.Parameter(torch.tensor([0.5]))
 
-    model.bert_description.requires_grad_(False)
-    model.bert_name.requires_grad_(False)
+    # model.bert_description.requires_grad_(False)
+    # model.bert_name.requires_grad_(False)
     model = torch.nn.DataParallel(model)
     model = model.cuda()
     model.train()
@@ -171,41 +171,47 @@ if __name__ == "__main__":
         # scheduler.step()
 
         # get gradients:
-        preds, labels = predictions(indexed_loader, model)
-        preds -= np.eye(CLASS_NUM)[labels]
 
-        subset, subset_weight, _, _, ordering_time, similarity_time = util.get_orders_and_weights(
-            B, preds, 'euclidean', smtk=0, no=0, y=labels, stoch_greedy=0,
-            equal_num=False)
+        if SUBSET_SIZE >= 1:
+            train_loader = indexed_loader
+        else:
 
-        weights = np.zeros(len(indexed_loader.dataset))
-        scaled_weight = subset_weight / np.sum(subset_weight) * len(subset_weight)
+            preds, labels = predictions(indexed_loader, model)
+            preds -= np.eye(CLASS_NUM)[labels]
 
-        # pdb.set_trace()
+            subset, subset_weight, _, _, ordering_time, similarity_time = util.get_orders_and_weights(
+                B, preds, 'euclidean', smtk=0, no=0, y=labels, stoch_greedy=0,
+                equal_num=False)
 
-        # selected_ndx[epoch], selected_wgt[epoch] = subset, scaled_weight
-        selected_ndx.append(subset)
-        selected_wgt.append(scaled_weight)
+            weights = np.zeros(len(indexed_loader.dataset))
+            scaled_weight = subset_weight / np.sum(subset_weight) * len(subset_weight)
+
+            # pdb.set_trace()
+
+            # selected_ndx[epoch], selected_wgt[epoch] = subset, scaled_weight
+            selected_ndx.append(subset)
+            selected_wgt.append(scaled_weight)
 
 
-        weights[subset] = scaled_weight
-        weight = torch.from_numpy(weights).float().cuda()
+            weights[subset] = scaled_weight
+            weight = torch.from_numpy(weights).float().cuda()
 
-        times_selected[subset] += 1
-        print(f'{np.sum(times_selected == 0) / len(times_selected) * 100:.3f} % not selected yet')
-        not_selected[epoch] = np.sum(times_selected == 0) / len(times_selected) * 100
-        indexed_subset = torch.utils.data.Subset(indexed_loader, indices=subset)
-        train_loader = DataLoader(
-            indexed_dataset,
-            batch_size=BATCH_SIZE, shuffle=True,
-            num_workers=WORKERS,
-            pin_memory=True)
+            times_selected[subset] += 1
+            print(f'{np.sum(times_selected == 0) / len(times_selected) * 100:.3f} % not selected yet')
+            not_selected[epoch] = np.sum(times_selected == 0) / len(times_selected) * 100
+            indexed_subset = torch.utils.data.Subset(indexed_loader, indices=subset)
+            train_loader = DataLoader(
+                indexed_dataset,
+                batch_size=BATCH_SIZE, shuffle=True,
+                num_workers=WORKERS,
+                pin_memory=True)
 
         model.train()
 
         # pdb.set_trace()
 
-        for i, (data, idx) in enumerate(train_loader):
+        # for i, (data, idx) in enumerate(train_loader):
+        for data, idx in tqdm(train_loader):
             # zero the parameter gradients
             optimizer.zero_grad()
 
@@ -235,7 +241,7 @@ if __name__ == "__main__":
 
         if top_1_acc > best_accuracy:
             best_accuracy = top_1_acc
-            torch.save(model, "./files/snlt_best2_200")
+            torch.save(model, f"./files/snlt3_best3_{CLASS_NUM}_full")
 
         print("=======>top1 acc on the test:{}".format(str(top_1_acc)))
         print("=======>top5 acc on the test:{}".format(str(top_5_acc)))
@@ -252,9 +258,11 @@ if __name__ == "__main__":
             }
         )
 
-        acc_list.to_csv(f'./files/t1_SN_{CLASS_NUM}.csv')
-        np.savez(f"./files/subset_{int(SUBSET_SIZE*100)}b_{CLASS_NUM}c",
-                 subset=selected_ndx, weight=selected_wgt)
+        acc_list.to_csv(f'./files/t3_SN_{CLASS_NUM}_full.csv')
+
+        if SUBSET_SIZE < 1:
+            np.savez(f"./files/subset3_{int(SUBSET_SIZE*100)}b_{CLASS_NUM}c_full",
+                     subset=selected_ndx, weight=selected_wgt)
 
     # print("=======>top1 acc on the test:{}".format(str(eval_top1_sn(model, test_dataloader, CLASS_NUM, True))))
 
