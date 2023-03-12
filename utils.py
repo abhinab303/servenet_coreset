@@ -1,3 +1,4 @@
+import pdb
 
 import numpy as np
 import pandas as pd
@@ -8,7 +9,7 @@ from torch.utils.data import TensorDataset
 
 from sklearn.preprocessing import LabelEncoder
 
-from hyper_param import *
+# from hyper_param import *
 
 def encode_onehot(labels):
     # classes = set(labels)
@@ -20,7 +21,7 @@ def encode_onehot(labels):
     return labels_onehot
 
 
-def load_data_train():
+def load_data_train(ip_file_dir, category_num, max_len):
     train_file = f"{ip_file_dir}{category_num}/train.csv"
     df = pd.read_csv(train_file)
     values = np.array(df.ServiceClassification)
@@ -60,7 +61,7 @@ def load_data_train():
     return train_data
 
 
-def load_data_test():
+def load_data_test(ip_file_dir, category_num, max_len):
     test_file = f"{ip_file_dir}{category_num}/test.csv"
     train_file = f"{ip_file_dir}{category_num}/train.csv"
     train_df = pd.read_csv(train_file)
@@ -101,7 +102,7 @@ def load_data_test():
     return test_data
 
 
-def eval_top1(model, dataLoader, class_num=CLASS_NUM, per_class=False):
+def eval_top1(model, dataLoader, class_num, per_class=False):
     model.eval()
     correct = 0
     total = 0
