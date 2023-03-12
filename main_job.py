@@ -365,7 +365,10 @@ if __name__ == "__main__":
             g_full = np.load(g_full_path)
         else:
             g_full = None
-        last_epoch_g_full = g_full["all_gradient"][epoch] if g_full else None
+        if g_full:
+            last_epoch_g_full = g_full["all_gradient"][epoch] if g_full else None
+        else:
+            last_epoch_g_full = None
 
         first_gradient_all = gp - np.eye(CLASS_NUM)[gt]
         first_gradient_ss = first_gradient_all[subset]
