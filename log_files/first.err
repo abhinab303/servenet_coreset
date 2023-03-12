@@ -20,10 +20,10 @@
   desc_list.append(torch.tensor(value))
 /home/aa7514/servenet_coreset/utils.py:97: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
   name_list.append(torch.tensor(value))
-Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias']
 - This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias']
 - This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
 OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
@@ -37,7 +37,7 @@ OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
 OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
 OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
 OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
-OMP: Info #254: KMP_AFFINITY: pid 29874 tid 29874 thread 0 bound to OS proc set 18
+OMP: Info #254: KMP_AFFINITY: pid 25358 tid 25358 thread 0 bound to OS proc set 18
 /home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
   order_mg_all = np.array(order_mg_all)
 /home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
@@ -53,7 +53,7 @@ OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
 OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
 OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
 OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
-OMP: Info #254: KMP_AFFINITY: pid 30123 tid 30123 thread 0 bound to OS proc set 18
+OMP: Info #254: KMP_AFFINITY: pid 25591 tid 25591 thread 0 bound to OS proc set 18
 OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
 OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
 OMP: Info #157: KMP_AFFINITY: 1 available OS procs
@@ -65,7 +65,7 @@ OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
 OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
 OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
 OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
-OMP: Info #254: KMP_AFFINITY: pid 30481 tid 30481 thread 0 bound to OS proc set 18
+OMP: Info #254: KMP_AFFINITY: pid 25949 tid 25949 thread 0 bound to OS proc set 18
 /home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
   order_mg_all = np.array(order_mg_all)
 /home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
@@ -81,7 +81,7 @@ OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
 OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
 OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
 OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
-OMP: Info #254: KMP_AFFINITY: pid 30671 tid 30671 thread 0 bound to OS proc set 18
+OMP: Info #254: KMP_AFFINITY: pid 26135 tid 26135 thread 0 bound to OS proc set 18
 OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
 OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
 OMP: Info #157: KMP_AFFINITY: 1 available OS procs
@@ -93,4 +93,1336 @@ OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
 OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
 OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
 OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
-OMP: Info #254: KMP_AFFINITY: pid 31034 tid 31034 thread 0 bound to OS proc set 18
+OMP: Info #254: KMP_AFFINITY: pid 26567 tid 26567 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 26746 tid 26746 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 27111 tid 27111 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 27282 tid 27282 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 27658 tid 27658 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 27840 tid 27840 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 28207 tid 28207 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 28373 tid 28373 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 28727 tid 28727 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 28910 tid 28910 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 29272 tid 29272 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 29444 tid 29444 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 29806 tid 29806 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 29984 tid 29984 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 30363 tid 30363 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 30763 tid 30763 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 31118 tid 31118 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 31278 tid 31278 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 31646 tid 31646 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 32306 tid 32306 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 32670 tid 32670 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 32834 tid 32834 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 33225 tid 33225 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 33402 tid 33402 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 33766 tid 33766 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 33939 tid 33939 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 34292 tid 34292 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 34449 tid 34449 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 34802 tid 34802 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 34993 tid 34993 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 35347 tid 35347 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 35533 tid 35533 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 35902 tid 35902 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 36065 tid 36065 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 36640 tid 36640 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 36831 tid 36831 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 636 tid 636 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 931 tid 931 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 1329 tid 1329 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 1561 tid 1561 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 1960 tid 1960 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 2136 tid 2136 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 2500 tid 2500 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 2684 tid 2684 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 3063 tid 3063 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 3239 tid 3239 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 3606 tid 3606 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 3787 tid 3787 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 4150 tid 4150 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 4314 tid 4314 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 4694 tid 4694 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 4862 tid 4862 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 5443 tid 5443 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 5603 tid 5603 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 6021 tid 6021 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 6191 tid 6191 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 31497 tid 31497 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 31670 tid 31670 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 32049 tid 32049 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 32225 tid 32225 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 32574 tid 32574 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 32748 tid 32748 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 33104 tid 33104 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 33438 tid 33438 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 33797 tid 33797 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 33970 tid 33970 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 34321 tid 34321 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 34704 tid 34704 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 35086 tid 35086 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 35258 tid 35258 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 939 tid 939 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 1129 tid 1129 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 1556 tid 1556 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 1751 tid 1751 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 2104 tid 2104 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 2268 tid 2268 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 2663 tid 2663 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 2834 tid 2834 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 3216 tid 3216 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 3390 tid 3390 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 3753 tid 3753 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 3924 tid 3924 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 4277 tid 4277 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 4450 tid 4450 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 4802 tid 4802 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 4961 tid 4961 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 5575 tid 5575 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 5733 tid 5733 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 6148 tid 6148 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 6322 tid 6322 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 6678 tid 6678 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 6833 tid 6833 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 7191 tid 7191 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 7381 tid 7381 thread 0 bound to OS proc set 18
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 7743 tid 7743 thread 0 bound to OS proc set 18
+/home/aa7514/servenet_coreset/util.py:501: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  order_mg_all = np.array(order_mg_all)
+/home/aa7514/servenet_coreset/util.py:502: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  cluster_sizes_all = np.array(cluster_sizes_all)
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 18
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 1 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 1 core/socket x 1 thread/core (1 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 1 core 0 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 7931 tid 7931 thread 0 bound to OS proc set 18
