@@ -361,14 +361,11 @@ if __name__ == "__main__":
         gp, gt, gl = get_gradients(indexed_loader, model, train_criterion)
 
         g_full_path = f"./files/subset_100b_{CLASS_NUM}c.npz"
-        if os.path.isfile(g_full_path):
+        compute_full_grad = os.path.isfile(g_full_path) and (SUBSET_SIZE < 1)
+
+        if compute_full_grad:
             g_full = np.load(g_full_path)
-        else:
-            g_full = None
-        if g_full:
-            last_epoch_g_full = g_full["all_gradient"][epoch] if g_full else None
-        else:
-            last_epoch_g_full = None
+            last_epoch_g_full = g_full["all_gradient"][epoch]
 
         first_gradient_all = gp - np.eye(CLASS_NUM)[gt]
         first_gradient_ss = first_gradient_all[subset]
@@ -378,15 +375,20 @@ if __name__ == "__main__":
         first_gradient_ss_wt = first_gradient_ss * np.tile(subset_weight, (CLASS_NUM, 1)).T
 
         first_gradient_error_wt = first_gradient_all.sum(axis=0) - first_gradient_ss_wt.sum(axis=0)
-        first_gradient_error_wt_full = last_epoch_g_full - first_gradient_ss_wt.sum(axis=0) if last_epoch_g_full else None
-
-        first_gradient_norm_wt_full = np.linalg.norm(first_gradient_error_wt_full) if first_gradient_error_wt_full else 0
+        if compute_full_grad:
+            first_gradient_error_wt_full = last_epoch_g_full - first_gradient_ss_wt.sum(axis=0)
+            first_gradient_norm_wt_full = np.linalg.norm(first_gradient_error_wt_full)
         first_gradient_norm_wt_rel = np.linalg.norm(first_gradient_error_wt) / np.linalg.norm(
             first_gradient_all.sum(axis=0))
-        first_gradient_norm_wt_rel_full = first_gradient_norm_wt_full / np.linalg.norm(last_epoch_g_full) if last_epoch_g_full else 0
+
+        if compute_full_grad:
+            first_gradient_norm_wt_rel_full = first_gradient_norm_wt_full / np.linalg.norm(last_epoch_g_full)
+            first_gradient_norm_full = np.linalg.norm(last_epoch_g_full)
+        else:
+            first_gradient_norm_wt_rel_full = 0
+            first_gradient_norm_full = 0
 
         first_gradient_norm_all = np.linalg.norm(first_gradient_all.sum(axis=0))
-        first_gradient_norm_full = np.linalg.norm(last_epoch_g_full) if last_epoch_g_full else 0
         first_gradient_norm_sub = np.linalg.norm(first_gradient_ss_wt.sum(axis=0))
 
         loss_all = gl
