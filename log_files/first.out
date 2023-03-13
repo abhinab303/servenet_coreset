@@ -6,3 +6,352 @@ tensor([0.5000], device='cuda:0', requires_grad=True)
 w22:  Parameter containing:
 tensor([0.5000], device='cuda:0', requires_grad=True)
 Epoch:1,lr:0.01
+=======>top1 acc on the test:62.982642578816865
+=======>top5 acc on the test:88.91250442791356
+w11:  Parameter containing:
+tensor([0.2142], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7408], device='cuda:0', requires_grad=True)
+Epoch:2,lr:0.01
+=======>top1 acc on the test:68.47325540205455
+=======>top5 acc on the test:92.95076160113355
+w11:  Parameter containing:
+tensor([0.1981], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7504], device='cuda:0', requires_grad=True)
+Epoch:3,lr:0.01
+=======>top1 acc on the test:70.06730428622033
+=======>top5 acc on the test:92.91533829259653
+w11:  Parameter containing:
+tensor([0.1857], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7537], device='cuda:0', requires_grad=True)
+Epoch:4,lr:0.01
+=======>top1 acc on the test:70.66950053134963
+=======>top5 acc on the test:93.09245483528161
+w11:  Parameter containing:
+tensor([0.1845], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7540], device='cuda:0', requires_grad=True)
+Epoch:5,lr:0.01
+=======>top1 acc on the test:71.27169677647892
+=======>top5 acc on the test:93.0570315267446
+w11:  Parameter containing:
+tensor([0.1815], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7547], device='cuda:0', requires_grad=True)
+Epoch:6,lr:0.01
+=======>top1 acc on the test:71.413390010627
+=======>top5 acc on the test:93.2695713779667
+w11:  Parameter containing:
+tensor([0.1828], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7544], device='cuda:0', requires_grad=True)
+Epoch:7,lr:0.01
+=======>top1 acc on the test:72.29897272405243
+=======>top5 acc on the test:93.2695713779667
+w11:  Parameter containing:
+tensor([0.1797], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7552], device='cuda:0', requires_grad=True)
+Epoch:8,lr:0.01
+=======>top1 acc on the test:71.80304640453419
+=======>top5 acc on the test:93.19872476089267
+w11:  Parameter containing:
+tensor([0.1800], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7551], device='cuda:0', requires_grad=True)
+Epoch:9,lr:0.01
+=======>top1 acc on the test:72.6532058094226
+=======>top5 acc on the test:92.59652851576337
+w11:  Parameter containing:
+tensor([0.1786], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7554], device='cuda:0', requires_grad=True)
+Epoch:10,lr:0.01
+=======>top1 acc on the test:71.6613531703861
+=======>top5 acc on the test:92.95076160113355
+w11:  Parameter containing:
+tensor([0.1752], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7562], device='cuda:0', requires_grad=True)
+Epoch:11,lr:0.01
+=======>top1 acc on the test:72.2281261069784
+=======>top5 acc on the test:92.34856535600426
+w11:  Parameter containing:
+tensor([0.1748], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7563], device='cuda:0', requires_grad=True)
+Epoch:12,lr:0.01
+=======>top1 acc on the test:72.2281261069784
+=======>top5 acc on the test:92.59652851576337
+w11:  Parameter containing:
+tensor([0.1741], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7565], device='cuda:0', requires_grad=True)
+Epoch:13,lr:0.01
+=======>top1 acc on the test:72.90116896918173
+=======>top5 acc on the test:92.17144881331916
+w11:  Parameter containing:
+tensor([0.1735], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7566], device='cuda:0', requires_grad=True)
+Epoch:14,lr:0.01
+=======>top1 acc on the test:71.94473963868225
+=======>top5 acc on the test:92.80906836698547
+w11:  Parameter containing:
+tensor([0.1733], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7566], device='cuda:0', requires_grad=True)
+Epoch:15,lr:0.01
+=======>top1 acc on the test:72.40524264966348
+=======>top5 acc on the test:91.95890896209706
+w11:  Parameter containing:
+tensor([0.1725], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7568], device='cuda:0', requires_grad=True)
+Epoch:16,lr:0.01
+=======>top1 acc on the test:72.51151257527454
+=======>top5 acc on the test:91.71094580233793
+w11:  Parameter containing:
+tensor([0.1722], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7569], device='cuda:0', requires_grad=True)
+Epoch:17,lr:0.01
+=======>top1 acc on the test:72.51151257527454
+=======>top5 acc on the test:92.0297555791711
+w11:  Parameter containing:
+tensor([0.1723], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7569], device='cuda:0', requires_grad=True)
+Epoch:18,lr:0.01
+=======>top1 acc on the test:72.33439603258944
+=======>top5 acc on the test:92.31314204746724
+w11:  Parameter containing:
+tensor([0.1719], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7570], device='cuda:0', requires_grad=True)
+Epoch:19,lr:0.01
+=======>top1 acc on the test:72.75947573503365
+=======>top5 acc on the test:92.0297555791711
+w11:  Parameter containing:
+tensor([0.1721], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7569], device='cuda:0', requires_grad=True)
+Epoch:20,lr:0.01
+=======>top1 acc on the test:72.75947573503365
+=======>top5 acc on the test:92.38398866454126
+w11:  Parameter containing:
+tensor([0.1719], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7570], device='cuda:0', requires_grad=True)
+Epoch:21,lr:0.01
+=======>top1 acc on the test:72.93659227771874
+=======>top5 acc on the test:91.85263903648601
+w11:  Parameter containing:
+tensor([0.1719], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7570], device='cuda:0', requires_grad=True)
+Epoch:22,lr:0.01
+=======>top1 acc on the test:72.58235919234856
+=======>top5 acc on the test:92.13602550478214
+w11:  Parameter containing:
+tensor([0.1712], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7571], device='cuda:0', requires_grad=True)
+Epoch:23,lr:0.01
+=======>top1 acc on the test:72.90116896918173
+=======>top5 acc on the test:92.06517888770811
+w11:  Parameter containing:
+tensor([0.1709], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7572], device='cuda:0', requires_grad=True)
+Epoch:24,lr:0.01
+=======>top1 acc on the test:73.11370882040383
+=======>top5 acc on the test:92.06517888770811
+w11:  Parameter containing:
+tensor([0.1708], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7572], device='cuda:0', requires_grad=True)
+Epoch:25,lr:0.01
+=======>top1 acc on the test:73.43251859723698
+=======>top5 acc on the test:91.99433227063408
+w11:  Parameter containing:
+tensor([0.1707], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7572], device='cuda:0', requires_grad=True)
+Epoch:26,lr:0.01
+=======>top1 acc on the test:72.93659227771874
+=======>top5 acc on the test:92.41941197307828
+w11:  Parameter containing:
+tensor([0.1706], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7573], device='cuda:0', requires_grad=True)
+Epoch:27,lr:0.01
+=======>top1 acc on the test:73.29082536308891
+=======>top5 acc on the test:91.92348565356004
+w11:  Parameter containing:
+tensor([0.1706], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7573], device='cuda:0', requires_grad=True)
+Epoch:28,lr:0.01
+=======>top1 acc on the test:73.32624867162593
+=======>top5 acc on the test:92.20687212185618
+w11:  Parameter containing:
+tensor([0.1705], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7573], device='cuda:0', requires_grad=True)
+Epoch:29,lr:0.01
+=======>top1 acc on the test:72.72405242649664
+=======>top5 acc on the test:91.88806234502303
+w11:  Parameter containing:
+tensor([0.1705], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7573], device='cuda:0', requires_grad=True)
+Epoch:30,lr:0.01
+=======>top1 acc on the test:73.14913212894085
+=======>top5 acc on the test:91.92348565356004
+w11:  Parameter containing:
+tensor([0.1704], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7573], device='cuda:0', requires_grad=True)
+Epoch:31,lr:0.01
+=======>top1 acc on the test:73.29082536308891
+=======>top5 acc on the test:91.92348565356004
+w11:  Parameter containing:
+tensor([0.1702], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7573], device='cuda:0', requires_grad=True)
+Epoch:32,lr:0.01
+=======>top1 acc on the test:72.93659227771874
+=======>top5 acc on the test:91.88806234502303
+w11:  Parameter containing:
+tensor([0.1701], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7574], device='cuda:0', requires_grad=True)
+Epoch:33,lr:0.01
+=======>top1 acc on the test:73.2554020545519
+=======>top5 acc on the test:91.67552249380093
+w11:  Parameter containing:
+tensor([0.1699], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7574], device='cuda:0', requires_grad=True)
+Epoch:34,lr:0.01
+=======>top1 acc on the test:73.39709528869996
+=======>top5 acc on the test:92.0297555791711
+w11:  Parameter containing:
+tensor([0.1698], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7574], device='cuda:0', requires_grad=True)
+Epoch:35,lr:0.01
+=======>top1 acc on the test:73.39709528869996
+=======>top5 acc on the test:92.34856535600426
+w11:  Parameter containing:
+tensor([0.1696], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7575], device='cuda:0', requires_grad=True)
+Epoch:36,lr:0.01
+=======>top1 acc on the test:72.54693588381154
+=======>top5 acc on the test:92.10060219624513
+w11:  Parameter containing:
+tensor([0.1696], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7575], device='cuda:0', requires_grad=True)
+Epoch:37,lr:0.01
+=======>top1 acc on the test:73.467941905774
+=======>top5 acc on the test:91.95890896209706
+w11:  Parameter containing:
+tensor([0.1696], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7575], device='cuda:0', requires_grad=True)
+Epoch:38,lr:0.01
+=======>top1 acc on the test:73.18455543747785
+=======>top5 acc on the test:91.81721572794899
+w11:  Parameter containing:
+tensor([0.1695], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7575], device='cuda:0', requires_grad=True)
+Epoch:39,lr:0.01
+=======>top1 acc on the test:73.39709528869996
+=======>top5 acc on the test:91.88806234502303
+w11:  Parameter containing:
+tensor([0.1695], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7575], device='cuda:0', requires_grad=True)
+Epoch:40,lr:0.01
+=======>top1 acc on the test:72.75947573503365
+=======>top5 acc on the test:92.0297555791711
+w11:  Parameter containing:
+tensor([0.1694], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7575], device='cuda:0', requires_grad=True)
+Epoch:41,lr:0.01
+=======>top1 acc on the test:73.11370882040383
+=======>top5 acc on the test:92.17144881331916
+w11:  Parameter containing:
+tensor([0.1694], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7575], device='cuda:0', requires_grad=True)
+Epoch:42,lr:0.01
+=======>top1 acc on the test:73.64505844845908
+=======>top5 acc on the test:91.95890896209706
+w11:  Parameter containing:
+tensor([0.1694], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7575], device='cuda:0', requires_grad=True)
+Epoch:43,lr:0.01
+=======>top1 acc on the test:73.71590506553312
+=======>top5 acc on the test:91.81721572794899
+w11:  Parameter containing:
+tensor([0.1692], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7576], device='cuda:0', requires_grad=True)
+Epoch:44,lr:0.01
+=======>top1 acc on the test:73.32624867162593
+=======>top5 acc on the test:91.99433227063408
+w11:  Parameter containing:
+tensor([0.1693], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7576], device='cuda:0', requires_grad=True)
+Epoch:45,lr:0.01
+=======>top1 acc on the test:73.467941905774
+=======>top5 acc on the test:92.06517888770811
+w11:  Parameter containing:
+tensor([0.1693], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7576], device='cuda:0', requires_grad=True)
+Epoch:46,lr:0.01
+=======>top1 acc on the test:73.71590506553312
+=======>top5 acc on the test:91.92348565356004
+w11:  Parameter containing:
+tensor([0.1691], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7576], device='cuda:0', requires_grad=True)
+Epoch:47,lr:0.01
+=======>top1 acc on the test:73.78675168260716
+=======>top5 acc on the test:91.85263903648601
+w11:  Parameter containing:
+tensor([0.1690], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7576], device='cuda:0', requires_grad=True)
+Epoch:48,lr:0.01
+=======>top1 acc on the test:73.78675168260716
+=======>top5 acc on the test:92.0297555791711
+w11:  Parameter containing:
+tensor([0.1690], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7576], device='cuda:0', requires_grad=True)
+Epoch:49,lr:0.01
+=======>top1 acc on the test:73.82217499114417
+=======>top5 acc on the test:91.95890896209706
+w11:  Parameter containing:
+tensor([0.1689], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7576], device='cuda:0', requires_grad=True)
+Epoch:50,lr:0.01
+=======>top1 acc on the test:73.39709528869996
+=======>top5 acc on the test:91.81721572794899
+w11:  Parameter containing:
+tensor([0.1689], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.7577], device='cuda:0', requires_grad=True)

@@ -1,0 +1,21 @@
+None
+Trainable:  225361410
+All:  225362434
+w11:  Parameter containing:
+tensor([0.5000], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.5000], device='cuda:0', requires_grad=True)
+Epoch:1,lr:0.01
+not equal_num
+from all class:  350
+89.075 % not selected yet
+=======>top1 acc on the test:20.88939566704675
+=======>top5 acc on the test:37.10376282782212
+w11:  Parameter containing:
+tensor([0.4315], device='cuda:0', requires_grad=True)
+w22:  Parameter containing:
+tensor([0.5629], device='cuda:0', requires_grad=True)
+Epoch:2,lr:0.01
+not equal_num
+from all class:  350
+80.558 % not selected yet
