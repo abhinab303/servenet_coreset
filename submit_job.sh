@@ -13,8 +13,8 @@ job_name=$base_job_name-"EE"
 out_file=$dir/$job_name.out
 error_file=$dir/$job_name.err
 
-# for ss_size in {1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9};
-for ss_size in {1..1};
+for ss_size in {0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9};
+# for ss_size in {1..1};
     do
         export ss_size 
         job_name=$base_job_name-$ss_size-ss_size
